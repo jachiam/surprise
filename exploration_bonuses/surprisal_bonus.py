@@ -93,7 +93,7 @@ class SurprisalBonus(ParameterizedExplorationBonus, Serializable):
             regressor_args=None,
     ):
         Serializable.quick_init(self, locals())
-        super(DynamoBonus, self).__init__()
+        super(SurprisalBonus, self).__init__()
         self.use_replay_pool=use_replay_pool
         self.replay_pool = SimpleReplayPool(
                 max_pool_size,
